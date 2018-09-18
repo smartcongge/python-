@@ -1,0 +1,6 @@
+num = input("请输入一个数字:")
+num = int(num)
+if num % 2 == 0:
+  print("你输入的数字是偶数")
+else:
+  print("你输入的数字不是偶数")
