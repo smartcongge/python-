@@ -1,0 +1,15 @@
+count = 3
+while count > 0:
+    import random
+    computer = random.randint(1, 100)
+    num = int(input("请猜一个我心里的数:(1,100),你还有%d次机会哦" % count))
+    count -= 1
+    if num == computer:
+        print("猜对了, 我们心有灵犀啊,不玩了")
+        exit()
+    if num > computer:
+        print("大了,猜小一点,你还有%d次机会" % count)
+    else:
+        print("小了,猜大一点,你还有%d次机会" % count)
+    if count == 0:
+        print("真可惜,和我没有缘分,下次再来")
